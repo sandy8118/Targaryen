@@ -15,22 +15,22 @@ public class TestHIibernateMapping {
 		Customer c5=new Customer(104,"Ramesh","Bhugaon",null);
 		Customer c6=new Customer(106,"Paddy","Shirdi",null);	
 		
-  	    Vendor v1=new Vendor(1,"Sandy","HomeAappliances",c1);
+  	/*    Vendor v1=new Vendor(1,"Sandy","HomeAappliances",c1);
 		Vendor v2=new Vendor(3,"Pradip","Electronics",c2);
 		Vendor v3=new Vendor(4,"Mahesh","Spareparts",c1);
 		Vendor v4=new Vendor(5,"Sachin","Electronics",c2);
 		Vendor v5=new Vendor(7,"Abhjit","Ayurvedic_Products",c2);
-		
+	*/	
 		
 		List<Vendor> vendor_list1 = new ArrayList<Vendor>(); 
 		List<Vendor> vendor_list2 = new ArrayList<Vendor>();
 		
-		vendor_list1.add(v1);
+	/*	vendor_list1.add(v1);
 		vendor_list2.add(v2);
 		vendor_list1.add(v3);
 		vendor_list2.add(v4);
 		vendor_list2.add(v5);
-		c1.setVendors(vendor_list1);
+	*/	c1.setVendors(vendor_list1);
 		c2.setVendors(vendor_list2);		
 		Session session1 = com.scp.java.HibernateUtil.hibernateUtilMethods.getSessionFactory().openSession();
 	       Transaction tr=session1.beginTransaction();
